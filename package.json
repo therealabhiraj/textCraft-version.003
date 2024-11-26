@@ -1,26 +1,22 @@
 {
-  "name": "homepage",
+  "name": "login",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "npm run dev",
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "server": "node \"D:/VS code/Web Devolopment/Login for project/backend/app.js\""
   },
   "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "flowbite": "^2.5.2",
-    "flowbite-react": "^0.10.2",
-    "mdb-react-ui-kit": "^9.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-dropzone": "^14.3.5",
-    "react-router-dom": "^6.28.0",
     "remixicon": "^4.5.0",
-    "remixicons": "^1.0.0",
-    "styled-components": "^6.1.13",
-    "tailwind-scrollbar": "^3.1.0"
+    "styled-components": "^6.1.13"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
@@ -28,6 +24,8 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "cross-env": "^7.0.3",
     "eslint": "^9.13.0",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",

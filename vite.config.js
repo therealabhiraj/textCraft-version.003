@@ -5,8 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: '192.168.1.5', // Allow connections from any network interface
-  },
+    port: 5174, // This changes the frontend server port (make sure it's not in use)
+    proxy: {
+      '/user': 'http://localhost:5000', // Replace with your actual backend URL
+    },
+   },
 
   css: {
     preprocessorOptions: {
@@ -19,3 +22,6 @@ export default defineConfig({
 
   
 })
+
+
+
